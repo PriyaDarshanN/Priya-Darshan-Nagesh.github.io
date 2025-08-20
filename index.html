@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Priya Darshan Nagesh</title>
+  <meta name="description" content="Game Engineering portfolio of [Your Name]: real-time graphics, gameplay systems, tools, and research." />
+  <meta property="og:title" content="Priya Darshan Nagesh" />
+  <meta property="og:description" content="Real‑time graphics • Gameplay systems • Tools • Research" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/assets/banner.png" />
+  <meta name="theme-color" content="#0ea5e9" />
+
+  <!-- Tailwind CDN (no build step) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { display: ['Inter','ui-sans-serif','system-ui','Segoe UI'] },
+          boxShadow: { soft: '0 10px 30px -10px rgba(0,0,0,.3)' }
+        }
+      },
+      darkMode: 'class'
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="bg-slate-50 text-slate-900 dark:bg-slate-900 dark:text-slate-100 font-display">
+  <!-- Header / Nav -->
+  <header class="sticky top-0 z-40 backdrop-blur bg-white/70 dark:bg-slate-900/60 border-b border-slate-200/60 dark:border-slate-700/60">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
+        <a href="#home" class="text-xl sm:text-2xl font-extrabold tracking-tight pixel">Priya Darshan Nagesh</a>
+      <nav class="hidden sm:flex items-center gap-6 text-sm font-medium">
+        <a class="navlink" href="#projects">Projects</a>
+        <a class="navlink" href="#skills">Skills</a>
+        <a class="navlink" href="#experience">Experience</a>
+        <a class="navlink" href="#contact">Contact</a>
+        <a class="px-3 py-1.5 rounded-xl bg-sky-500 text-white hover:bg-sky-600" href="resume.pdf" target="_blank" rel="noopener">Resume</a>
+        <button id="themeToggle" class="px-3 py-1.5 rounded-xl border border-slate-300/60 dark:border-slate-700" aria-label="Toggle theme">🌓</button>
+      </nav>
+      <button id="menuToggle" class="sm:hidden px-3 py-1.5 rounded-xl border border-slate-300/60 dark:border-slate-700" aria-label="Open Menu">☰</button>
+    </div>
+    <div id="mnav" class="sm:hidden hidden border-t border-slate-200/60 dark:border-slate-700/60">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3 flex flex-wrap gap-4 text-sm">
+        <a href="#projects" class="navlink">Projects</a>
+        <a href="#skills" class="navlink">Skills</a>
+        <a href="#experience" class="navlink">Experience</a>
+        <a href="#contact" class="navlink">Contact</a>
+        <a class="px-3 py-1.5 rounded-xl bg-sky-500 text-white hover:bg-sky-600" href="resume.pdf" target="_blank" rel="noopener">Resume</a>
+        <button id="themeToggleMobile" class="px-3 py-1.5 rounded-xl border border-slate-300/60 dark:border-slate-700">Toggle theme</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="max-w-6xl mx-auto px-4 sm:px-6 py-14">
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight">
+          Game Engineer & CS Graduate building <span class="text-sky-500">real‑time</span> systems & effects
+        </h1>
+        <p class="mt-4 text-slate-600 dark:text-slate-300 text-lg">I design and implement performant gameplay, tools, and GPU effects. Recent work includes custom HLSL fire, 2D fluid simulation, and profiling/optimization on Unity URP.</p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="#projects" class="px-4 py-2 rounded-xl bg-sky-500 text-white hover:bg-sky-600 shadow-soft">View Projects</a>
+          <a href="https://github.com/[username]" class="px-4 py-2 rounded-xl border border-slate-300/60 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/[username]" class="px-4 py-2 rounded-xl border border-slate-300/60 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="aspect-video w-full rounded-2xl overflow-hidden ring-1 ring-slate-200 dark:ring-slate-700 shadow-soft">
+          <!-- Replace with your demo GIF/MP4 -->
+          <video src="assets/hero-demo.mp4" class="w-full h-full object-cover" autoplay muted loop playsinline></video>
+        </div>
+        <div class="badge-now-playing absolute -bottom-4 -right-4">
+          <span class="text-xs">Now playing: <strong>Fire & Fluid</strong> • Unity + HLSL</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="max-w-6xl mx-auto px-4 sm:px-6 py-10">
+    <div class="flex items-end justify-between">
+      <h2 class="text-2xl sm:text-3xl font-extrabold">Projects</h2>
+      <a href="https://github.com/[username]?tab=repositories" target="_blank" rel="noopener" class="text-sm underline">More on GitHub →</a>
+    </div>
+
+    <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Project with tabs (Video / Repo) -->
+      <article class="card rounded-2xl overflow-hidden ring-1 ring-slate-200 dark:ring-slate-700 bg-white dark:bg-slate-800">
+        <div class="p-4">
+          <div class="flex items-center justify-between mb-2">
+            <h3 class="font-bold text-lg">Real‑Time Fire Shader</h3>
+            <span class="pill">Unity • HLSL</span>
+          </div>
+          <p class="text-sm text-slate-600 dark:text-slate-300 mb-3">Procedural flames with smoke & ash; compared against Shader Graph & VFX Graph.</p>
+
+          <div class="tabs">
+            <div class="tablist" role="tablist" aria-label="Project views">
+              <button role="tab" aria-selected="true" data-tab="video-1" class="tab">Video</button>
+              <button role="tab" aria-selected="false" data-tab="repo-1" class="tab">Repo</button>
+            </div>
+            <div class="tabpanels mt-2">
+              <div role="tabpanel" data-panel="video-1" class="tab-panel">
+                <div class="aspect-video bg-black/60">
+                  <iframe class="w-full h-full" src="https://www.youtube.com/embed/VIDEO_ID_1" title="YouTube video" frameborder="0" allowfullscreen></iframe>
+                </div>
+              </div>
+              <div role="tabpanel" data-panel="repo-1" class="tab-panel hidden">
+                <div class="p-4 bg-white dark:bg-slate-800">
+                  <a href="https://github.com/[username]/fire-shader-hlsl" target="_blank" rel="noopener" class="btn">Open Repository</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card rounded-2xl overflow-hidden ring-1 ring-slate-200 dark:ring-slate-700 bg-white dark:bg-slate-800">
+        <div class="p-4">
+          <div class="flex items-center justify-between mb-2">
+            <h3 class="font-bold text-lg">2D Liquid Simulation</h3>
+            <span class="pill">Unity • Compute</span>
+          </div>
+          <p class="text-sm text-slate-600 dark:text-slate-300 mb-3">Stable‑fluids compute shader with obstacles and tweakable params.</p>
+
+          <div class="tabs">
+            <div class="tablist" role="tablist" aria-label="Project views">
+              <button role="tab" aria-selected="true" data-tab="video-2" class="tab">Video</button>
+              <button role="tab" aria-selected="false" data-tab="repo-2" class="tab">Repo</button>
+            </div>
+            <div class="tabpanels mt-2">
+              <div role="tabpanel" data-panel="video-2" class="tab-panel">
+                <div class="aspect-video bg-black/60">
+                  <iframe class="w-full h-full" src="https://www.youtube.com/embed/VIDEO_ID_2" title="YouTube video" frameborder="0" allowfullscreen></iframe>
+                </div>
+              </div>
+              <div role="tabpanel" data-panel="repo-2" class="tab-panel hidden">
+                <div class="p-4 bg-white dark:bg-slate-800">
+                  <a href="https://github.com/[username]/2d-fluid-sim" target="_blank" rel="noopener" class="btn">Open Repository</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card rounded-2xl overflow-hidden ring-1 ring-slate-200 dark:ring-slate-700 bg-white dark:bg-slate-800">
+        <div class="p-4">
+          <div class="flex items-center justify-between mb-2">
+            <h3 class="font-bold text-lg">Gameplay Systems Toolkit</h3>
+            <span class="pill">C# • Patterns</span>
+          </div>
+          <p class="text-sm text-slate-600 dark:text-slate-300 mb-3">State machines, pooling, event bus, and save/load as drop‑in Unity packages.</p>
+
+          <div class="tabs">
+            <div class="tablist" role="tablist" aria-label="Project views">
+              <button role="tab" aria-selected="true" data-tab="repo-3" class="tab">Repo</button>
+            </div>
+            <div class="tabpanels mt-2">
+              <div role="tabpanel" data-panel="repo-3" class="tab-panel">
+                <div class="p-4 bg-white dark:bg-slate-800">
+                  <a href="https://github.com/[username]/gameplay-systems-toolkit" target="_blank" rel="noopener" class="btn">Open Repository</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="max-w-6xl mx-auto px-4 sm:px-6 py-10">
+    <h2 class="text-2xl sm:text-3xl font-extrabold">Skills</h2>
+    <div class="mt-4 grid sm:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
+      <div class="panel">
+        <h3 class="font-bold">Engines & Graphics</h3>
+        <p class="mt-2 text-slate-600 dark:text-slate-300">Unity (URP, HDRP), Unreal basics, HLSL/GLSL, compute shaders, profiling (RenderDoc, PIX), GPU debugging.</p>
+      </div>
+      <div class="panel">
+        <h3 class="font-bold">Programming</h3>
+        <p class="mt-2 text-slate-600 dark:text-slate-300">C#, C/C++, Python, patterns, math for games, ECS, data‑oriented design, CI/CD (GitHub Actions).</p>
+      </div>
+      <div class="panel">
+        <h3 class="font-bold">Gameplay & Tools</h3>
+        <p class="mt-2 text-slate-600 dark:text-slate-300">Systems design, editor tooling, build pipelines, telemetry, performance budgets, documentation.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience / Education -->
+  <section id="experience" class="max-w-6xl mx-auto px-4 sm:px-6 py-10">
+    <h2 class="text-2xl sm:text-3xl font-extrabold">Experience</h2>
+    <div class="mt-4 space-y-4">
+      <div class="panel">
+        <div class="flex items-center justify-between">
+          <h3 class="font-bold">[Role] — [Company/Lab]</h3>
+          <span class="text-xs">[MM YYYY] – [MM YYYY]</span>
+        </div>
+        <ul class="list-disc ml-5 mt-2 text-sm text-slate-600 dark:text-slate-300">
+          <li>Implemented <strong>custom HLSL fire shader</strong> with particle‑based smoke & GPU sorting.</li>
+          <li>Reduced frame time by <strong>~X ms</strong> via batching, culling, and CPU/GPU parallelism.</li>
+          <li>Built internal tools (profilers, parameter panels) to speed iteration.</li>
+        </ul>
+      </div>
+
+      <div class="panel">
+        <div class="flex items-center justify-between">
+          <h3 class="font-bold">BSc Computer Science / MSc Game Development — [University]</h3>
+          <span class="text-xs">[YYYY] – [YYYY]</span>
+        </div>
+        <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Dissertation: <em>Custom GPU Visual Effects in Unity Using HLSL</em>. Implemented real‑time fire and 2D fluid simulation; benchmarked vs Shader Graph/VFX Graph.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="max-w-6xl mx-auto px-4 sm:px-6 py-10">
+    <div class="panel p-6">
+      <h2 class="text-2xl sm:text-3xl font-extrabold">Contact</h2>
+      <p class="mt-2 text-slate-600 dark:text-slate-300">Have a role, collab, or question? Reach me here.</p>
+      <div class="mt-4 grid sm:grid-cols-2 gap-4 text-sm">
+        <a href="mailto:[you@email.com]" class="btn">[you@email.com]</a>
+        <a href="https://github.com/[username]" target="_blank" rel="noopener" class="btn">github.com/[username]</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-10 text-center text-xs text-slate-500">
+    <p>© <span id="year"></span> [Your Name]. Built with ❤️ and Tailwind. <a class="underline" href="https://github.com/[username]/[repo]">Source</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
