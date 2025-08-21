@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\assets"
   ],
-  "SelectedNode": "\\index.html",
+  "SelectedNode": "\\.gitignore",
   "PreviewInSolutionExplorer": false
 }
