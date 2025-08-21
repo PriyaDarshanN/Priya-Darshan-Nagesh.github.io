@@ -1,241 +1,416 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Priya Darshan Nagesh</title>
-  <meta name="description" content="Game Engineering portfolio of [Your Name]: real-time graphics, gameplay systems, tools, and research." />
-  <meta property="og:title" content="Priya Darshan Nagesh" />
-  <meta property="og:description" content="Real‑time graphics • Gameplay systems • Tools • Research" />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="/assets/banner.png" />
-  <meta name="theme-color" content="#0ea5e9" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Priya Darshan Nagesh</title>
+    <meta name="description" content="Game Engineering portfolio of [Your Name]: real-time graphics, gameplay systems, tools, and research." />
+    <meta property="og:title" content="Priya Darshan Nagesh" />
+    <meta property="og:description" content="Real‑time graphics • Gameplay systems • Tools • Research" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/assets/favicon.png" />
+    <meta name="theme-color" content="#0ea5e9" />
 
-  <!-- Tailwind CDN (no build step) -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: { display: ['Inter','ui-sans-serif','system-ui','Segoe UI'] },
-          boxShadow: { soft: '0 10px 30px -10px rgba(0,0,0,.3)' }
+    <!-- Tailwind CDN (no build step) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { display: ['Inter', 'ui-sans-serif', 'system-ui', 'Segoe UI'] },
+                    boxShadow: { soft: '0 10px 30px -10px rgba(0,0,0,.3)' }
+                }
+            },
+            darkMode: 'class'
         }
-      },
-      darkMode: 'class'
-    }
-  </script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+    </script>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body class="bg-slate-50 text-slate-900 dark:bg-slate-900 dark:text-slate-100 font-display">
-  <!-- Header / Nav -->
-  <header class="sticky top-0 z-40 backdrop-blur bg-white/70 dark:bg-slate-900/60 border-b border-slate-200/60 dark:border-slate-700/60">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
-        <a href="#home" class="text-xl sm:text-2xl font-extrabold tracking-tight pixel">Priya Darshan Nagesh</a>
-      <nav class="hidden sm:flex items-center gap-6 text-sm font-medium">
-        <a class="navlink" href="#projects">Projects</a>
-        <a class="navlink" href="#skills">Skills</a>
-        <a class="navlink" href="#experience">Experience</a>
-        <a class="navlink" href="#contact">Contact</a>
-        <a class="px-3 py-1.5 rounded-xl bg-sky-500 text-white hover:bg-sky-600" href="resume.pdf" target="_blank" rel="noopener">Resume</a>
-        <button id="themeToggle" class="px-3 py-1.5 rounded-xl border border-slate-300/60 dark:border-slate-700" aria-label="Toggle theme">🌓</button>
-      </nav>
-      <button id="menuToggle" class="sm:hidden px-3 py-1.5 rounded-xl border border-slate-300/60 dark:border-slate-700" aria-label="Open Menu">☰</button>
-    </div>
-    <div id="mnav" class="sm:hidden hidden border-t border-slate-200/60 dark:border-slate-700/60">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3 flex flex-wrap gap-4 text-sm">
-        <a href="#projects" class="navlink">Projects</a>
-        <a href="#skills" class="navlink">Skills</a>
-        <a href="#experience" class="navlink">Experience</a>
-        <a href="#contact" class="navlink">Contact</a>
-        <a class="px-3 py-1.5 rounded-xl bg-sky-500 text-white hover:bg-sky-600" href="resume.pdf" target="_blank" rel="noopener">Resume</a>
-        <button id="themeToggleMobile" class="px-3 py-1.5 rounded-xl border border-slate-300/60 dark:border-slate-700">Toggle theme</button>
-      </div>
-    </div>
-  </header>
-
-  <!-- Hero -->
-  <section id="home" class="max-w-6xl mx-auto px-4 sm:px-6 py-14">
-    <div class="grid md:grid-cols-2 gap-10 items-center">
-      <div>
-        <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight">
-          Game Engineer & CS Graduate building <span class="text-sky-500">real‑time</span> systems & effects
-        </h1>
-        <p class="mt-4 text-slate-600 dark:text-slate-300 text-lg">I design and implement performant gameplay, tools, and GPU effects. Recent work includes custom HLSL fire, 2D fluid simulation, and profiling/optimization on Unity URP.</p>
-        <div class="mt-6 flex flex-wrap gap-3">
-          <a href="#projects" class="px-4 py-2 rounded-xl bg-sky-500 text-white hover:bg-sky-600 shadow-soft">View Projects</a>
-          <a href="https://github.com/[username]" class="px-4 py-2 rounded-xl border border-slate-300/60 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800" target="_blank" rel="noopener">GitHub</a>
-          <a href="https://www.linkedin.com/in/[username]" class="px-4 py-2 rounded-xl border border-slate-300/60 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800" target="_blank" rel="noopener">LinkedIn</a>
+    <!-- Header / Nav -->
+    <header class="sticky top-0 z-40 backdrop-blur bg-white/70 dark:bg-slate-900/60 border-b border-slate-200/60 dark:border-slate-700/60">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
+            <a href="#home" class="text-xl sm:text-2xl font-extrabold tracking-tight pixel">Priya Darshan Nagesh</a>
+            <nav class="hidden sm:flex items-center gap-6 text-sm font-medium">
+                <a class="navlink" href="#projects">Projects</a>
+                <a class="navlink" href="about.html">About</a>
+                <a class="navlink" href="contact.html">Contact</a>
+                <a class="px-3 py-1.5 rounded-xl bg-sky-500 text-white hover:bg-sky-600" href="resume.pdf" target="_blank" rel="noopener">Resume</a>
+                <button id="themeToggle" class="px-3 py-1.5 rounded-xl border border-slate-300/60 dark:border-slate-700" aria-label="Toggle theme">🌓</button>
+            </nav>
+            <button id="menuToggle" class="sm:hidden px-3 py-1.5 rounded-xl border border-slate-300/60 dark:border-slate-700" aria-label="Open Menu">☰</button>
         </div>
-      </div>
-      <div class="relative">
-        <div class="aspect-video w-full rounded-2xl overflow-hidden ring-1 ring-slate-200 dark:ring-slate-700 shadow-soft">
-          <!-- Replace with your demo GIF/MP4 -->
-          <video src="assets/hero-demo.mp4" class="w-full h-full object-cover" autoplay muted loop playsinline></video>
-        </div>
-        <div class="badge-now-playing absolute -bottom-4 -right-4">
-          <span class="text-xs">Now playing: <strong>Fire & Fluid</strong> • Unity + HLSL</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects -->
-  <section id="projects" class="max-w-6xl mx-auto px-4 sm:px-6 py-10">
-    <div class="flex items-end justify-between">
-      <h2 class="text-2xl sm:text-3xl font-extrabold">Projects</h2>
-      <a href="https://github.com/[username]?tab=repositories" target="_blank" rel="noopener" class="text-sm underline">More on GitHub →</a>
-    </div>
-
-    <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      <!-- Project with tabs (Video / Repo) -->
-      <article class="card rounded-2xl overflow-hidden ring-1 ring-slate-200 dark:ring-slate-700 bg-white dark:bg-slate-800">
-        <div class="p-4">
-          <div class="flex items-center justify-between mb-2">
-            <h3 class="font-bold text-lg">Real‑Time Fire Shader</h3>
-            <span class="pill">Unity • HLSL</span>
-          </div>
-          <p class="text-sm text-slate-600 dark:text-slate-300 mb-3">Procedural flames with smoke & ash; compared against Shader Graph & VFX Graph.</p>
-
-          <div class="tabs">
-            <div class="tablist" role="tablist" aria-label="Project views">
-              <button role="tab" aria-selected="true" data-tab="video-1" class="tab">Video</button>
-              <button role="tab" aria-selected="false" data-tab="repo-1" class="tab">Repo</button>
+        <div id="mnav" class="sm:hidden hidden border-t border-slate-200/60 dark:border-slate-700/60">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3 flex flex-wrap gap-4 text-sm">
+                <a href="#projects" class="navlink">Projects</a>
+                <a href="#skills" class="navlink">Skills</a>
+                <a href="#experience" class="navlink">Experience</a>
+                <a href="#contact" class="navlink">Contact</a>
+                <a href="about.html" class="navlink">About</a>
+                <a class="px-3 py-1.5 rounded-xl bg-sky-500 text-white hover:bg-sky-600" href="resume.pdf" target="_blank" rel="noopener">Resume</a>
+                <button id="themeToggleMobile" class="px-3 py-1.5 rounded-xl border border-slate-300/60 dark:border-slate-700">Toggle theme</button>
             </div>
-            <div class="tabpanels mt-2">
-              <div role="tabpanel" data-panel="video-1" class="tab-panel">
-                <div class="aspect-video bg-black/60">
-                  <iframe class="w-full h-full" src="https://www.youtube.com/embed/VIDEO_ID_1" title="YouTube video" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <!-- Hero -->
+    <section id="home" class="max-w-6xl mx-auto px-4 sm:px-6 py-14 relative">
+        <!-- Animated background pattern -->
+        <div class="absolute inset-0 opacity-10 pointer-events-none z-0">
+            <div class="absolute top-20 left-10 w-2.5 h-2.5 bg-blue-400 rounded-full animate-float-1"></div>
+            <div class="absolute top-40 right-20 w-3 h-3 bg-green-400 rounded-full animate-float-2"></div>
+            <div class="absolute bottom-40 left-1/4 w-2 h-2 bg-purple-400 rounded-full animate-float-3"></div>
+            <div class="absolute bottom-20 right-1/3 w-3 h-3 bg-yellow-400 rounded-full animate-float-4"></div>
+            <div class="absolute top-1/3 left-1/2 w-2.5 h-2.5 bg-pink-400 rounded-full animate-float-5"></div>
+            <div class="absolute bottom-1/3 right-1/4 w-2 h-2 bg-cyan-400 rounded-full animate-float-6"></div>
+            <div class="absolute top-2/3 left-1/3 w-2 h-2 bg-orange-400 rounded-full animate-float-7"></div>
+            <div class="absolute top-1/2 right-1/3 w-2.5 h-2.5 bg-indigo-400 rounded-full animate-float-8"></div>
+            <div class="absolute top-1/3 left-1/4 w-3 h-3 bg-green-400 rounded-full animate-float-9"></div>
+        </div>
+        <div class="relative z-10">
+            <div class="max-w-4xl mx-auto text-center">
+                <!-- Role badge with pulse animation -->
+                <div class="inline-flex items-center px-4 py-2 bg-blue-600/20 border border-blue-500/30 rounded-full text-blue-300 text-sm font-medium mb-8">
+                    <span class="w-2 h-2 bg-blue-400 rounded-full mr-2 animate-pulse"></span>
+                    Available for Opportunities
                 </div>
-              </div>
-              <div role="tabpanel" data-panel="repo-1" class="tab-panel hidden">
-                <div class="p-4 bg-white dark:bg-slate-800">
-                  <a href="https://github.com/[username]/fire-shader-hlsl" target="_blank" rel="noopener" class="btn">Open Repository</a>
+                <h1 class="text-5xl sm:text-6xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white via-blue-100 to-purple-100 bg-clip-text text-transparent">
+                    Priya Darshan Nagesh
+                </h1>
+                <p class="text-2xl sm:text-3xl md:text-4xl text-slate-300 mb-8 font-light">
+                    Game Developer & Engineer
+                </p>
+                <p class="text-lg sm:text-xl text-slate-400 mb-12 max-w-3xl mx-auto leading-relaxed">
+                    Crafting immersive gaming experiences with expertise in Unreal Engine, C++, and full-stack development.
+                    Passionate about creating engaging gameplay mechanics and pushing technical boundaries.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6 mb-8">
+                    <a href="#projects"
+                       class="group bg-gradient-to-r from-sky-500 to-blue-700 hover:from-blue-700 hover:to-blue-800 px-8 py-4 rounded-lg font-medium transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-blue-500/25 flex items-center">
+                        <span>View Projects</span>
+                        <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </a>
+                    <a href="contact.html"
+                       class="group bg-[#2a2f3b] hover:bg-[#3a3f4b] border border-gray-600 hover:border-gray-500 px-8 py-4 rounded-lg font-medium transition-all duration-300 transform hover:scale-105 flex items-center">
+                        <span>Get In Touch</span>
+                        <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                        </svg>
+                    </a>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <article class="card rounded-2xl overflow-hidden ring-1 ring-slate-200 dark:ring-slate-700 bg-white dark:bg-slate-800">
-        <div class="p-4">
-          <div class="flex items-center justify-between mb-2">
-            <h3 class="font-bold text-lg">2D Liquid Simulation</h3>
-            <span class="pill">Unity • Compute</span>
-          </div>
-          <p class="text-sm text-slate-600 dark:text-slate-300 mb-3">Stable‑fluids compute shader with obstacles and tweakable params.</p>
-
-          <div class="tabs">
-            <div class="tablist" role="tablist" aria-label="Project views">
-              <button role="tab" aria-selected="true" data-tab="video-2" class="tab">Video</button>
-              <button role="tab" aria-selected="false" data-tab="repo-2" class="tab">Repo</button>
-            </div>
-            <div class="tabpanels mt-2">
-              <div role="tabpanel" data-panel="video-2" class="tab-panel">
-                <div class="aspect-video bg-black/60">
-                  <iframe class="w-full h-full" src="https://www.youtube.com/embed/VIDEO_ID_2" title="YouTube video" frameborder="0" allowfullscreen></iframe>
+                <!-- Quick stats -->
+                <div class="flex justify-center items-center gap-8 mt-16 pt-8 border-t border-slate-700/50">
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-sky-400">5+</div>
+                        <div class="text-sm text-slate-400">Game Projects</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-green-400">1+</div>
+                        <div class="text-sm text-slate-400">Years Experience</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-purple-400">12+</div>
+                        <div class="text-sm text-slate-400">Technologies</div>
+                    </div>
                 </div>
-              </div>
-              <div role="tabpanel" data-panel="repo-2" class="tab-panel hidden">
-                <div class="p-4 bg-white dark:bg-slate-800">
-                  <a href="https://github.com/[username]/2d-fluid-sim" target="_blank" rel="noopener" class="btn">Open Repository</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Projects -->
+    <section id="projects" class="w-full px-4 sm:px-10 py-10">
+        <div class="flex items-end justify-between mb-2">
+            <h2 class="text-2xl sm:text-3xl font-extrabold">Projects</h2>
+            <a href="https://github.com/PriyaDarshanN?tab=repositories"
+               target="_blank"
+               rel="noopener"
+               class="inline-flex items-center px-4 py-2 rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold shadow hover:from-blue-700 hover:to-purple-700 hover:scale-105 transition-all duration-200 group">
+                More on GitHub
+                <svg class="w-5 h-5 ml-2 text-white group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+            </a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-6">
+            <!-- Project 1 -->
+            <div class="group bg-gradient-to-br from-[#1a1f2b] to-[#2a2f3b] rounded-2xl overflow-hidden shadow-xl transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/10 border border-gray-700/50 hover:border-blue-500/30 flex flex-col">
+                <div class="relative">
+                    <div class="aspect-[16/10] w-full rounded-t-xl overflow-hidden ring-1 ring-slate-200 dark:ring-slate-700 shadow-soft mb-0">
+                        <iframe id="video-1" class="w-full h-full" src="" title="Dissertation Preview" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
+                        <div class="bg-black/50 rounded-full p-3">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="absolute top-4 right-4 flex flex-col gap-2">
+                        <a href="https://github.com/PriyaDarshanN/Dissertation-CSC8599" target="_blank" rel="noopener" class="inline-flex items-center bg-blue-600/90 hover:bg-blue-500 text-white px-3 py-1.5 rounded-lg text-sm font-medium transition-all duration-300 hover:scale-105 shadow-lg">Repo</a>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <article class="card rounded-2xl overflow-hidden ring-1 ring-slate-200 dark:ring-slate-700 bg-white dark:bg-slate-800">
-        <div class="p-4">
-          <div class="flex items-center justify-between mb-2">
-            <h3 class="font-bold text-lg">Gameplay Systems Toolkit</h3>
-            <span class="pill">C# • Patterns</span>
-          </div>
-          <p class="text-sm text-slate-600 dark:text-slate-300 mb-3">State machines, pooling, event bus, and save/load as drop‑in Unity packages.</p>
-
-          <div class="tabs">
-            <div class="tablist" role="tablist" aria-label="Project views">
-              <button role="tab" aria-selected="true" data-tab="repo-3" class="tab">Repo</button>
-            </div>
-            <div class="tabpanels mt-2">
-              <div role="tabpanel" data-panel="repo-3" class="tab-panel">
-                <div class="p-4 bg-white dark:bg-slate-800">
-                  <a href="https://github.com/[username]/gameplay-systems-toolkit" target="_blank" rel="noopener" class="btn">Open Repository</a>
+                <div class="p-8 flex-1 flex flex-col">
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-sm text-blue-400 font-medium">Academic</span>
+                        <span class="text-sm bg-blue-600/20 text-blue-400 px-3 py-1 rounded-full font-medium border border-blue-500/30">Graphics</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors duration-300">Dissertation -  Real Time Fire Rendering and 2D Fluid Simulation in Unity.</h3>
+                    <p class="text-gray-300 mb-4 leading-relaxed">
+                        Developed a real-time fire shader (HLSL) with smoke/ash particles and a 2D fluid simulation in Unity URP.
+                        Implemented low-level GPU and CPU systems for performance and visual fidelity. Achieved 100+ FPS on mid-range hardware, demonstrating advanced shader programming and optimisation skills.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-[#2a2f3b] text-gray-300 px-3 py-1 rounded-full text-sm border border-gray-600/50">Unity</span>
+                        <span class="bg-[#2a2f3b] text-gray-300 px-3 py-1 rounded-full text-sm border border-gray-600/50">HLSL</span>
+                        <span class="bg-[#2a2f3b] text-gray-300 px-3 py-1 rounded-full text-sm border border-gray-600/50">C#</span>
+                    </div>
+                    <div class="flex items-center justify-between text-sm text-gray-400 mt-auto">
+                        <span>May 2025 - July 2025</span>
+                        <div class="flex items-center group-hover:text-blue-400 transition-colors">
+                            <!--<span>View Details</span>
+                            <svg class="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                            </svg>-->
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
+
+            <!-- Project 2 -->
+            <div class="group bg-gradient-to-br from-[#1a1f2b] to-[#2a2f3b] rounded-2xl overflow-hidden shadow-xl transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/10 border border-gray-700/50 hover:border-blue-500/30 flex flex-col">
+                <div class="relative">
+                    <div class="aspect-[16/10] w-full rounded-t-xl overflow-hidden ring-1 ring-slate-200 dark:ring-slate-700 shadow-soft mb-0">
+                        <iframe id="video-2" class="w-full h-full" src="" title="2D Liquid Simulation Preview" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="absolute top-4 right-4 flex flex-col gap-2">
+                        <a href="https://github.com/[username]/2d-fluid-sim" target="_blank" rel="noopener" class="inline-flex items-center bg-blue-600/90 hover:bg-blue-500 text-white px-3 py-1.5 rounded-lg text-sm font-medium transition-all duration-300 hover:scale-105 shadow-lg">Repo</a>
+                    </div>
+                </div>
+                <div class="p-8 flex-1 flex flex-col">
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-sm text-blue-400 font-medium">Game Development</span>
+                        <span class="text-sm bg-blue-600/20 text-blue-400 px-3 py-1 rounded-full font-medium border border-blue-500/30">Developer</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors duration-300">Cat Maze :Advanced Game Technologies</h3>
+                    <p class="text-gray-300 mb-4 leading-relaxed">
+                        An engaging maze puzzle game combining single-player story elements with multiplayer competition.
+                        Players navigate as a cat, collecting coins and finding kittens while avoiding enemies, with multiplayer support for competitive gameplay.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-[#2a2f3b] text-gray-300 px-3 py-1 rounded-full text-sm border border-gray-600/50">Custom Engine</span>
+                        <span class="bg-[#2a2f3b] text-gray-300 px-3 py-1 rounded-full text-sm border border-gray-600/50">OpenGL</span>
+                        <span class="bg-[#2a2f3b] text-gray-300 px-3 py-1 rounded-full text-sm border border-gray-600/50">C++</span>
+                    </div>
+                    <div class="flex items-center justify-between text-sm text-gray-400 mt-auto">
+                        <span>18th Nov 2024 - 13th Dec 2024</span>
+                        <div class="flex items-center group-hover:text-blue-400 transition-colors">
+                            <!--<span>View Details</span>
+                            <svg class="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                            </svg>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="group bg-gradient-to-br from-[#1a1f2b] to-[#2a2f3b] rounded-2xl overflow-hidden shadow-xl transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/10 border border-gray-700/50 hover:border-blue-500/30 flex flex-col">
+                <div class="relative">
+                    <div class="aspect-[16/10] w-full rounded-t-xl overflow-hidden ring-1 ring-slate-200 dark:ring-slate-700 shadow-soft mb-0">
+                        <iframe id="video-3" class="w-full h-full" src="" title="Season-Advanced Graphics for Games" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="absolute top-4 right-4 flex flex-col gap-2">
+                        <a href="https://github.com/[username]/gameplay-systems-toolkit" target="_blank" rel="noopener" class="inline-flex items-center bg-blue-600/90 hover:bg-blue-500 text-white px-3 py-1.5 rounded-lg text-sm font-medium transition-all duration-300 hover:scale-105 shadow-lg">Repo</a>
+                    </div>
+                </div>
+                <div class="p-8 flex-1 flex flex-col">
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-sm text-blue-400 font-medium">Game Development</span>
+                        <span class="text-sm bg-blue-600/20 text-blue-400 px-3 py-1 rounded-full font-medium border border-blue-500/30">Graphics Programmer</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors duration-300">Season - Advanced Graphics for Games</h3>
+                    <p class="text-gray-300 mb-4 leading-relaxed">
+                        For my CSC8502 coursework, I built a graphics
+                        project in C++ and OpenGL with dynamic lighting, shaders, and post-processing effects.
+                        It shows my skills in creating efficient and visually engaging graphics for games.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-[#2a2f3b] text-gray-300 px-3 py-1 rounded-full text-sm border border-gray-600/50">OpenGL</span>
+                        <span class="bg-[#2a2f3b] text-gray-300 px-3 py-1 rounded-full text-sm border border-gray-600/50">C++</span>
+                        <span class="bg-[#2a2f3b] text-gray-300 px-3 py-1 rounded-full text-sm border border-gray-600/50">Graphics Programming</span>
+                        <span class="bg-[#2a2f3b] text-gray-300 px-3 py-1 rounded-full text-sm border border-gray-600/50">Shader Programming</span>
+                    </div>
+                    <div class="flex items-center justify-between text-sm text-gray-400 mt-auto">
+                        <span>21st Oct 2024- 15th Nov 2024</span>
+                        <div class="flex items-center group-hover:text-blue-400 transition-colors">
+                            <!--<span>View Details</span>
+                            <svg class="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                            </svg>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </article>
-    </div>
-  </section>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10">
+            <!-- Project 4 -->
+            <div class="group bg-gradient-to-br from-[#1a1f2b] to-[#2a2f3b] rounded-2xl overflow-hidden shadow-xl transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/10 border border-gray-700/50 hover:border-blue-500/30 flex flex-col">
+                <div class="relative">
+                    <div class="aspect-[16/10] w-full rounded-t-xl overflow-hidden ring-1 ring-slate-200 dark:ring-slate-700 shadow-soft mb-0">
+                        <iframe id="video-4" class="w-full h-full" src="" title="Project 4 Preview" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="absolute top-4 right-4 flex flex-col gap-2">
+                        <a href="https://github.com/lzeio/NU_GameJam" target="_blank" rel="noopener" class="inline-flex items-center bg-blue-600/90 hover:bg-blue-500 text-white px-3 py-1.5 rounded-lg text-sm font-medium transition-all duration-300 hover:scale-105 shadow-lg">Repo</a>
+                    </div>
+                </div>
+                <div class="p-8 flex-1 flex flex-col">
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-sm text-blue-400 font-medium">Game Development</span>
+                        <span class="text-sm bg-blue-600/20 text-blue-400 px-3 py-1 rounded-full font-medium border border-blue-500/30">Gameplay Programmer</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors duration-300">Rogue-like Top-down Shooter</h3>
+                    <p class="text-gray-300 mb-4 leading-relaxed">A dark-themed top-down rogue-like shooter developed during a game jam featuring procedurally generated levels and dynamic room layouts.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-[#2a2f3b] text-gray-300 px-3 py-1 rounded-full text-sm border border-gray-600/50">Unreal Engine</span>
+                        <span class="bg-[#2a2f3b] text-gray-300 px-3 py-1 rounded-full text-sm border border-gray-600/50">C++</span>
+                        <span class="bg-[#2a2f3b] text-gray-300 px-3 py-1 rounded-full text-sm border border-gray-600/50">Blueprints</span>
+                        <span class="bg-[#2a2f3b] text-gray-300 px-3 py-1 rounded-full text-sm border border-gray-600/50">Game Jam</span>
 
-  <!-- Skills -->
-  <section id="skills" class="max-w-6xl mx-auto px-4 sm:px-6 py-10">
-    <h2 class="text-2xl sm:text-3xl font-extrabold">Skills</h2>
-    <div class="mt-4 grid sm:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
-      <div class="panel">
-        <h3 class="font-bold">Engines & Graphics</h3>
-        <p class="mt-2 text-slate-600 dark:text-slate-300">Unity (URP, HDRP), Unreal basics, HLSL/GLSL, compute shaders, profiling (RenderDoc, PIX), GPU debugging.</p>
-      </div>
-      <div class="panel">
-        <h3 class="font-bold">Programming</h3>
-        <p class="mt-2 text-slate-600 dark:text-slate-300">C#, C/C++, Python, patterns, math for games, ECS, data‑oriented design, CI/CD (GitHub Actions).</p>
-      </div>
-      <div class="panel">
-        <h3 class="font-bold">Gameplay & Tools</h3>
-        <p class="mt-2 text-slate-600 dark:text-slate-300">Systems design, editor tooling, build pipelines, telemetry, performance budgets, documentation.</p>
-      </div>
-    </div>
-  </section>
+                    </div>
+                    <div class="flex items-center justify-between text-sm text-gray-400 mt-auto">
+                        <span>6th Jan 2025 - 19th Jan 2025</span>
+                        <div class="flex items-center group-hover:text-blue-400 transition-colors">
+                            <!--<span>View Details</span>
+                            <svg class="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                            </svg>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-  <!-- Experience / Education -->
-  <section id="experience" class="max-w-6xl mx-auto px-4 sm:px-6 py-10">
-    <h2 class="text-2xl sm:text-3xl font-extrabold">Experience</h2>
-    <div class="mt-4 space-y-4">
-      <div class="panel">
-        <div class="flex items-center justify-between">
-          <h3 class="font-bold">[Role] — [Company/Lab]</h3>
-          <span class="text-xs">[MM YYYY] – [MM YYYY]</span>
+            <!-- Project 5 -->
+            <div class="group bg-gradient-to-br from-[#1a1f2b] to-[#2a2f3b] rounded-2xl overflow-hidden shadow-xl transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/10 border border-gray-700/50 hover:border-blue-500/30 flex flex-col">
+                <div class="relative">
+                    <div class="aspect-[16/10] w-full rounded-t-xl overflow-hidden ring-1 ring-slate-200 dark:ring-slate-700 shadow-soft mb-0">
+                        <iframe id="video-5" class="w-full h-full" src="" title="Project 5 Preview" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="absolute top-4 right-4 flex flex-col gap-2">
+                        <a href="https://github.com/SL-A-SH/CSC8508" target="_blank" rel="noopener" class="inline-flex items-center bg-blue-600/90 hover:bg-blue-500 text-white px-3 py-1.5 rounded-lg text-sm font-medium transition-all duration-300 hover:scale-105 shadow-lg">Repo</a>
+                    </div>
+                </div>
+                <div class="p-8 flex-1 flex flex-col">
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-sm text-blue-400 font-medium">Game Development</span>
+                        <div class="flex flex-col items-end gap-2">
+                            <span class="text-sm bg-blue-600/20 text-blue-400 px-3 py-1 rounded-full font-medium border border-blue-500/30">Gameplay Programmer</span>
+                            <span class="text-sm bg-purple-600/20 text-purple-400 px-3 py-1 rounded-full font-medium border border-purple-500/30">Mechanics Programmer</span>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors duration-300">Crosslink: Cooperative Chaos</h3>
+                    <p class="text-gray-300 mb-4 leading-relaxed">
+                        Crosslink: Cooperative Chaos is a fast-paced puzzle-action game built in C++ with the NCL framework for PC and PlayStation 5. It features non-violent,
+                        team-based gameplay with both single-player and online multiplayer modes. Designed with scalable, data-driven systems, the project showcases strong performance optimization,
+                        clean architecture, and professional development practices.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-[#2a2f3b] text-gray-300 px-3 py-1 rounded-full text-sm border border-gray-600/50">C++</span>
+                        <span class="bg-[#2a2f3b] text-gray-300 px-3 py-1 rounded-full text-sm border border-gray-600/50">Custom Engine</span>
+                        <span class="bg-[#2a2f3b] text-gray-300 px-3 py-1 rounded-full text-sm border border-gray-600/50">OpenGL</span>
+                    </div>
+                    <div class="flex items-center justify-between text-sm text-gray-400 mt-auto">
+                        <span>Jan 2025 - Feb 2025</span>
+                        <div class="flex items-center group-hover:text-blue-400 transition-colors">
+                            <!--<span>View Details</span>
+                            <svg class="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                            </svg>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 6 -->
+            <!--<div class="group bg-gradient-to-br from-[#1a1f2b] to-[#2a2f3b] rounded-2xl overflow-hidden shadow-xl transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/10 border border-gray-700/50 hover:border-blue-500/30 flex flex-col">
+                <div class="relative">
+                    <div class="aspect-[16/10] w-full rounded-t-xl overflow-hidden ring-1 ring-slate-200 dark:ring-slate-700 shadow-soft mb-0">
+                        <iframe id="video-6" class="w-full h-full" src="" title="Project 6 Preview" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="absolute top-4 right-4 flex flex-col gap-2">
+                        <a href="https://github.com/[username]/project-6" target="_blank" rel="noopener" class="inline-flex items-center bg-blue-600/90 hover:bg-blue-500 text-white px-3 py-1.5 rounded-lg text-sm font-medium transition-all duration-300 hover:scale-105 shadow-lg">Repo</a>
+                    </div>
+                </div>
+                <div class="p-8 flex-1 flex flex-col">
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-sm text-blue-400 font-medium">Game Development</span>
+                        <span class="text-sm bg-blue-600/20 text-blue-400 px-3 py-1 rounded-full font-medium border border-blue-500/30">Role</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors duration-300">Project Title 6</h3>
+                    <p class="text-gray-300 mb-4 leading-relaxed">Short description of project 6 goes here.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-[#2a2f3b] text-gray-300 px-3 py-1 rounded-full text-sm border border-gray-600/50">Tech 1</span>
+                        <span class="bg-[#2a2f3b] text-gray-300 px-3 py-1 rounded-full text-sm border border-gray-600/50">Tech 2</span>
+                    </div>
+                    <div class="flex items-center justify-between text-sm text-gray-400 mt-auto">
+                        <span>Year</span>
+                        <div class="flex items-center group-hover:text-blue-400 transition-colors">-->
+            <!--<span>View Details</span>
+            <svg class="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>-->
+            <!--</div>
+                    </div>
+                </div>
+            </div>-->
         </div>
-        <ul class="list-disc ml-5 mt-2 text-sm text-slate-600 dark:text-slate-300">
-          <li>Implemented <strong>custom HLSL fire shader</strong> with particle‑based smoke & GPU sorting.</li>
-          <li>Reduced frame time by <strong>~X ms</strong> via batching, culling, and CPU/GPU parallelism.</li>
-          <li>Built internal tools (profilers, parameter panels) to speed iteration.</li>
-        </ul>
-      </div>
+    </section>
 
-      <div class="panel">
-        <div class="flex items-center justify-between">
-          <h3 class="font-bold">BSc Computer Science / MSc Game Development — [University]</h3>
-          <span class="text-xs">[YYYY] – [YYYY]</span>
+
+
+    <!-- Skills -->
+    <section id="skills" class="max-w-6xl mx-auto px-4 sm:px-6 py-10">
+        <h2 class="text-2xl sm:text-3xl font-extrabold">Skills</h2>
+        <div class="mt-4 grid sm:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
+            <div class="panel">
+                <h3 class="font-bold">Engines & Graphics</h3>
+                <p class="mt-2 text-slate-600 dark:text-slate-300">Unity , Unreal basics, HLSL/GLSL, compute shaders, profiling (RenderDoc, PIX), GPU debugging ,Tensorflow.</p>
+            </div>
+            <div class="panel">
+                <h3 class="font-bold">Programming</h3>
+                <p class="mt-2 text-slate-600 dark:text-slate-300">C#, C/C++,, GLSL, Python, patterns, math for games, Java ,  Data‑oriented design, HTML , CSS , JavaScript , matlap.</p>
+            </div>
+            <div class="panel">
+                <h3 class="font-bold">Gameplay & Tools</h3>
+                <p class="mt-2 text-slate-600 dark:text-slate-300">
+                    Systems design , build pipelines , editor tooling , Visual Studio , LaTeX , Git , NVIDIA NSight , CMake , Eclipse , IntelliJ , Photoshop.
+                </p>
+            </div>
         </div>
-        <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Dissertation: <em>Custom GPU Visual Effects in Unity Using HLSL</em>. Implemented real‑time fire and 2D fluid simulation; benchmarked vs Shader Graph/VFX Graph.</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact -->
-  <section id="contact" class="max-w-6xl mx-auto px-4 sm:px-6 py-10">
-    <div class="panel p-6">
-      <h2 class="text-2xl sm:text-3xl font-extrabold">Contact</h2>
-      <p class="mt-2 text-slate-600 dark:text-slate-300">Have a role, collab, or question? Reach me here.</p>
-      <div class="mt-4 grid sm:grid-cols-2 gap-4 text-sm">
-        <a href="mailto:[you@email.com]" class="btn">[you@email.com]</a>
-        <a href="https://github.com/[username]" target="_blank" rel="noopener" class="btn">github.com/[username]</a>
-      </div>
-    </div>
-  </section>
+ 
 
-  <!-- Footer -->
-  <footer class="py-10 text-center text-xs text-slate-500">
-    <p>© <span id="year"></span> [Your Name]. Built with ❤️ and Tailwind. <a class="underline" href="https://github.com/[username]/[repo]">Source</a></p>
-  </footer>
+    <!-- Footer -->
+    <footer class="py-10 text-center text-xs text-slate-500">
+        <p>
+            © <span id="year"></span> Priya Darshan Nagesh. Built with ❤️ and Tailwind.
+            <a class="underline" href="https://github.com/PriyaDarshanN/Priya-Darshan-Nagesh.github.io">Source</a> |
+            <a class="underline" href="about.html">About</a>
+        </p>
+    </footer>
 
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

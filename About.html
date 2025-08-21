@@ -1,0 +1,288 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About Me | Priya Darshan Nagesh</title>
+    <meta name="description" content="About Priya Darshan Nagesh: Game Developer and Computer Games Engineering student." />
+    <meta property="og:title" content="Priya Darshan Nagesh" />
+    <meta property="og:description" content="Real‑time graphics • Gameplay systems • Tools • Research" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/assets/banner.png" />
+    <meta name="theme-color" content="#0ea5e9" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { display: ['Inter','ui-sans-serif','system-ui','Segoe UI'] },
+          boxShadow: { soft: '0 10px 30px -10px rgba(0,0,0,.3)' }
+        }
+      },
+      darkMode: 'class'
+    }</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        body {
+            font-family: 'Inter', ui-sans-serif, system-ui, 'Segoe UI', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 dark:bg-slate-900 dark:text-slate-100 font-display">
+    <!-- Header / Nav -->
+    <header class="sticky top-0 z-40 backdrop-blur bg-white/70 dark:bg-slate-900/60 border-b border-slate-200/60 dark:border-slate-700/60">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
+            <a href="index.html#home" class="text-xl sm:text-2xl font-extrabold tracking-tight pixel">Priya Darshan Nagesh</a>
+            <nav class="hidden sm:flex items-center gap-6 text-sm font-medium">
+                <a class="navlink" href="index.html#projects">Projects</a>
+                <a class="navlink" href="about.html">About</a>
+                <a class="navlink" href="contact.html#contact">Contact</a>
+                <a class="px-3 py-1.5 rounded-xl bg-sky-500 text-white hover:bg-sky-600" href="resume.pdf" target="_blank" rel="noopener">Resume</a>
+                <button id="themeToggle" class="px-3 py-1.5 rounded-xl border border-slate-300/60 dark:border-slate-700" aria-label="Toggle theme">🌓</button>
+            </nav>
+            <button id="menuToggle" class="sm:hidden px-3 py-1.5 rounded-xl border border-slate-300/60 dark:border-slate-700" aria-label="Open Menu">☰</button>
+        </div>
+        <div id="mnav" class="sm:hidden hidden border-t border-slate-200/60 dark:border-slate-700/60">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3 flex flex-wrap gap-4 text-sm">
+                <a href="index.html#projects" class="navlink">Projects</a>
+                <a href="index.html#skills" class="navlink">Skills</a>
+                <a href="index.html#experience" class="navlink">Experience</a>
+                <a href="index.html#contact" class="navlink">Contact</a>
+                <a href="about.html" class="navlink">About</a>
+                <a class="px-3 py-1.5 rounded-xl bg-sky-500 text-white hover:bg-sky-600" href="resume.pdf" target="_blank" rel="noopener">Resume</a>
+                <button id="themeToggleMobile" class="px-3 py-1.5 rounded-xl border border-slate-300/60 dark:border-slate-700">Toggle theme</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pt-20 px-4 sm:px-6 lg:px-8 min-h-screen">
+        <div class="max-w-6xl mx-auto py-12">
+            <div class="text-center mb-16">
+                <h1 class="text-4xl sm:text-5xl font-bold mb-4 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+                    About Me
+                </h1>
+                <p class="text-lg text-gray-400 max-w-2xl mx-auto">
+                    Game Developer and Computer Games Engineering student passionate about creating immersive gaming experiences.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+                <!-- Main Content -->
+                <div class="lg:col-span-3 space-y-12">
+                    <!-- Background Section -->
+                    <section>
+                        <h2 class="text-3xl font-bold mb-6 text-white">Background</h2>
+                        <div class="bg-gradient-to-br from-[#1a1f2b] to-[#2a2f3b] p-8 rounded-xl border border-gray-700/50">
+                            <p class="text-gray-300 text-lg leading-relaxed mb-6">
+                                I'm a Game Developer and Computer Games Engineering student passionate about creating
+                                immersive gaming experiences. With a background in full-stack and mobile development,
+                                I bring a comprehensive understanding of software development to game creation.
+                            </p>
+                            <p class="text-gray-300 text-lg leading-relaxed">
+                                My journey in technology started with web and mobile development, which has given me a strong foundation
+                                in software engineering principles. Now, I'm focused on game development, combining my technical skills
+                                with creative problem-solving to build engaging interactive experiences.
+                            </p>
+                        </div>
+                    </section>
+
+                    <!-- Skills & Technologies Section -->
+                    <section>
+                        <h2 class="text-3xl font-bold mb-6 text-white">Skills & Technologies</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <!-- Game Development Skills -->
+                            <div class="bg-gradient-to-br from-[#1a1f2b] to-[#2a2f3b] p-6 rounded-xl border border-gray-700/50">
+                                <h3 class="text-xl font-semibold mb-4 text-blue-400 flex items-center">
+                                    <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1m-6 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                    Game Development
+                                </h3>
+                                <div class="space-y-3">
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-gray-300">Unreal Engine</span>
+                                        <div class="w-24 bg-gray-700 rounded-full h-2">
+                                            <div class="bg-blue-500 h-2 rounded-full" style="width:90%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-gray-300">C++</span>
+                                        <div class="w-24 bg-gray-700 rounded-full h-2">
+                                            <div class="bg-blue-500 h-2 rounded-full" style="width:85%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-gray-300">Blueprints</span>
+                                        <div class="w-24 bg-gray-700 rounded-full h-2">
+                                            <div class="bg-blue-500 h-2 rounded-full" style="width:80%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-gray-300">Game AI</span>
+                                        <div class="w-24 bg-gray-700 rounded-full h-2">
+                                            <div class="bg-blue-500 h-2 rounded-full" style="width:75%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Web & Mobile Skills -->
+                            <!--<div class="bg-gradient-to-br from-[#1a1f2b] to-[#2a2f3b] p-6 rounded-xl border border-gray-700/50">
+                                <h3 class="text-xl font-semibold mb-4 text-green-400 flex items-center">
+                                    <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                    </svg>
+                                    Web & Mobile
+                                </h3>
+                                <div class="space-y-3">
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-gray-300">React</span>
+                                        <div class="w-24 bg-gray-700 rounded-full h-2">
+                                            <div class="bg-green-500 h-2 rounded-full" style="width:90%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-gray-300">React Native</span>
+                                        <div class="w-24 bg-gray-700 rounded-full h-2">
+                                            <div class="bg-green-500 h-2 rounded-full" style="width:85%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-gray-300">Node.js</span>
+                                        <div class="w-24 bg-gray-700 rounded-full h-2">
+                                            <div class="bg-green-500 h-2 rounded-full" style="width:80%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-gray-300">Python</span>
+                                        <div class="w-24 bg-gray-700 rounded-full h-2">
+                                            <div class="bg-green-500 h-2 rounded-full" style="width:60%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>-->
+                        </div>
+                    </section>
+
+                    <!-- Work Experience Section -->
+                    <section>
+                        <h2 class="text-3xl font-bold mb-6 text-white">Work Experience</h2>
+                        <div class="space-y-6">
+                            <!-- Experience Card 1 -->
+                            <div class="bg-gradient-to-br from-[#1a1f2b] to-[#2a2f3b] p-6 rounded-xl border border-gray-700/50 hover:border-blue-500/30 transition-colors">
+                                <div class="flex justify-between items-start mb-3">
+                                    <h3 class="text-xl font-semibold text-white">Part-Time Web Interns</h3>
+                                    <span class="text-sm text-purple-400 bg-purple-600/20 px-3 py-1 rounded-full">Dec 2024 - Feb 2025</span>
+                                </div>
+                                <p class="text-gray-300 font-medium mb-2">Roamer Robotics™ - Part-time while studying</p>
+                                <p class="text-gray-400 text-sm mb-3">Full-stack development across multiple platforms</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="bg-[#2a2f3b] text-gray-300 px-3 py-1 rounded-full text-sm border border-gray-600/50">WorldPress</span>
+                                    <span class="bg-[#2a2f3b] text-gray-300 px-3 py-1 rounded-full text-sm border border-gray-600/50">Web developemnt</span>
+                                    <span class="bg-[#2a2f3b] text-gray-300 px-3 py-1 rounded-full text-sm border border-gray-600/50">Html & css</span>
+                                </div>
+                            </div>
+                            <!-- Experience Card 2 -->
+                            <div class="bg-gradient-to-br from-[#1a1f2b] to-[#2a2f3b] p-6 rounded-xl border border-gray-700/50 hover:border-blue-500/30 transition-colors">
+                                <div class="flex justify-between items-start mb-3">
+                                    <h3 class="text-xl font-semibold text-white">Software Developer</h3>
+                                    <span class="text-sm text-blue-400 bg-blue-600/20 px-3 py-1 rounded-full">Aug 2023 – Sep 2023</span>
+                                </div>
+                                <p class="text-gray-300 font-medium mb-2">Bharat Electronics Limited (BEL) - Bengaluru, India</p>
+                                <p class="text-gray-400 text-sm mb-3">Worked on weekly assignments and designed UX and UI</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="bg-[#2a2f3b] text-gray-300 px-3 py-1 rounded-full text-sm border border-gray-600/50">UX & UI</span>
+                                    <span class="bg-[#2a2f3b] text-gray-300 px-3 py-1 rounded-full text-sm border border-gray-600/50">Systems</span>
+                                    <span class="bg-[#2a2f3b] text-gray-300 px-3 py-1 rounded-full text-sm border border-gray-600/50">Python</span>
+                                </div>
+                            </div>
+                            <!-- Experience Card 3 -->
+                            <div class="bg-gradient-to-br from-[#1a1f2b] to-[#2a2f3b] p-6 rounded-xl border border-gray-700/50 hover:border-blue-500/30 transition-colors">
+                                <div class="flex justify-between items-start mb-3">
+                                    <h3 class="text-xl font-semibold text-white">Freelance Develpoer </h3>
+                                    <span class="text-sm text-green-400 bg-green-600/20 px-3 py-1 rounded-full">Sep 2023- Nov 2023</span>
+                                </div>
+                                <p class="text-gray-300 font-medium mb-2">Accurate Info Solution, Bengaluru </p>
+                                <p class="text-gray-400 text-sm mb-3">create and develope multipal Applicarion and web sites</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="bg-[#2a2f3b] text-gray-300 px-3 py-1 rounded-full text-sm border border-gray-600/50">React</span>
+                                    <span class="bg-[#2a2f3b] text-gray-300 px-3 py-1 rounded-full text-sm border border-gray-600/50">React Native</span>
+                                    <span class="bg-[#2a2f3b] text-gray-300 px-3 py-1 rounded-full text-sm border border-gray-600/50">WorldPress</span>
+                                    <span class="bg-[#2a2f3b] text-gray-300 px-3 py-1 rounded-full text-sm border border-gray-600/50">Application</span>
+                                    <span class="bg-[#2a2f3b] text-gray-300 px-3 py-1 rounded-full text-sm border border-gray-600/50">Android Studio</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Education Section -->
+                    <section>
+                        <h2 class="text-3xl font-bold mb-6 text-white">Education</h2>
+                        <div class="space-y-6">
+                            <div class="bg-gradient-to-br from-[#1a1f2b] to-[#2a2f3b] p-6 rounded-xl border border-gray-700/50">
+                                <div class="flex justify-between items-start mb-3">
+                                    <h3 class="text-xl font-semibold text-white">MSc Computer Games Engineering</h3>
+                                    <span class="text-sm text-blue-400 bg-blue-600/20 px-3 py-1 rounded-full">2024-2025</span>
+                                </div>
+                                <p class="text-gray-300 font-medium">Newcastle University</p>
+                                <p class="text-gray-400 text-sm">Expected Graduation: 2025</p>
+                            </div>
+                            <div class="bg-gradient-to-br from-[#1a1f2b] to-[#2a2f3b] p-6 rounded-xl border border-gray-700/50">
+                                <div class="flex justify-between items-start mb-3">
+                                    <h3 class="text-xl font-semibold text-white">B.Tech Computer Science</h3>
+                                    <span class="text-sm text-green-400 bg-green-600/20 px-3 py-1 rounded-full">2020-2024</span>
+                                </div>
+                                <p class="text-gray-300 font-medium">East West Institute Of Technology</p>
+                                <p class="text-gray-400 text-sm">Graduated: 2024</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="lg:col-span-1">
+                    <div class="bg-gradient-to-br from-[#1a1f2b] to-[#2a2f3b] p-6 rounded-xl border border-gray-700/50 sticky top-24">
+                        <h2 class="text-xl font-semibold mb-6 text-white">Quick Info</h2>
+                        <div class="space-y-6">
+                            <div>
+                                <h3 class="text-sm text-gray-400 mb-2 font-medium">📍 Location</h3>
+                                <p class="text-gray-300">Newcastle Upon Tyne, UK</p>
+                            </div>
+                            <div>
+                                <h3 class="text-sm text-gray-400 mb-2 font-medium">🌍 Languages</h3>
+                                <div class="space-y-1">
+                                    <p class="text-gray-300">English (Fluent)</p>
+                                    <p class="text-gray-300">Hindi (Fluent)</p>
+                                    <p class="text-gray-300">Kannada (Native)</p>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="text-sm text-gray-400 mb-2 font-medium">🎮 Interests</h3>
+                                <ul class="text-gray-300 space-y-1">
+                                    <li>• Game Development</li>
+                                    <li>• Game Engine Development</li>
+                                    <li>• AI in Games</li>
+                                    <li>• Graphics Programming</li>
+                                </ul>
+                            </div>
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-10 text-center text-xs text-slate-500">
+        <p>
+            © <span id="year"></span> Priya Darshan Nagesh. Built with ❤️ and Tailwind.
+            <a class="underline" href="https://github.com/[username]/[repo]">Source</a> |
+            <a class="underline" href="about.html">About</a>
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

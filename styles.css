@@ -37,3 +37,22 @@
 .dark .tabpanels { border-color: rgba(71,85,105,.6); }
 .tab-panel iframe, .tab-panel img, .tab-panel video { display: block; width: 100%; height: 100%; }
 .hidden { display: none; }
+@keyframes float-1 { 0%{transform:translateY(0);} 50%{transform:translateY(-20px);} 100%{transform:translateY(0);} }
+@keyframes float-2 { 0%{transform:translateY(0);} 50%{transform:translateY(15px);} 100%{transform:translateY(0);} }
+@keyframes float-3 { 0%{transform:translateX(0);} 50%{transform:translateX(20px);} 100%{transform:translateX(0);} }
+@keyframes float-4 { 0%{transform:translateY(0);} 50%{transform:translateY(-15px);} 100%{transform:translateY(0);} }
+@keyframes float-5 { 0%{transform:translateX(0);} 50%{transform:translateX(-20px);} 100%{transform:translateX(0);} }
+@keyframes float-6 { 0%{transform:translateY(0);} 50%{transform:translateY(10px);} 100%{transform:translateY(0);} }
+@keyframes float-7 { 0%{transform:translateX(0);} 50%{transform:translateX(10px);} 100%{transform:translateX(0);} }
+@keyframes float-8 { 0%{transform:translateY(0);} 50%{transform:translateY(-10px);} 100%{transform:translateY(0);} }
+@keyframes float-9 { 0%{transform:translateX(0);} 50%{transform:translateX(-10px);} 100%{transform:translateX(0);} }
+
+.animate-float-1 { animation: float-1 4s ease-in-out infinite; }
+.animate-float-2 { animation: float-2 5s ease-in-out infinite; }
+.animate-float-3 { animation: float-3 6s ease-in-out infinite; }
+.animate-float-4 { animation: float-4 4.5s ease-in-out infinite; }
+.animate-float-5 { animation: float-5 5.5s ease-in-out infinite; }
+.animate-float-6 { animation: float-6 6.5s ease-in-out infinite; }
+.animate-float-7 { animation: float-7 7s ease-in-out infinite; }
+.animate-float-8 { animation: float-8 5.2s ease-in-out infinite; }
+.animate-float-9 { animation: float-9 6.2s ease-in-out infinite; }

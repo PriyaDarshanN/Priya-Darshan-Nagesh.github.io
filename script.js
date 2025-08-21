@@ -30,6 +30,79 @@ function toggleTheme() {
     const isDark = document.documentElement.classList.toggle('dark');
     localStorage.setItem('theme', isDark ? 'dark' : 'light');
 }
+const previews = {
+    "video-1": [
+        "https://www.youtube.com/embed/4xQCs_ZiP5Q",
+        "https://www.youtube.com/embed/4xQCs_ZiP5Q"
+       
+    ],
+    "video-2": [
+        "https://www.youtube.com/embed/IWpml6bwoxI",
+        "https://www.youtube.com/embed/IWpml6bwoxI"
+    ],
+    "video-3": [
+        "https://www.youtube.com/embed/a2gdxl-VHik",
+        "https://www.youtube.com/embed/a2gdxl-VHik"
+    ],
+    "video-4": [
+        "https://www.youtube.com/embed/JhTLDkxr62Y?si=WfxUITbSgoIr5_E-",
+        "https://www.youtube.com/embed/JhTLDkxr62Y?si=WfxUITbSgoIr5_E-"
+    ],
+    "video-5": [
+        "https://www.youtube.com/embed/_aosXFYaFH8?si=aAWGyyWmrtLjpbC3",
+        "https://www.youtube.com/embed/_aosXFYaFH8?si=aAWGyyWmrtLjpbC3"
+    ]
+};
+
+// Set random preview for each video iframe
+Object.keys(previews).forEach(id => {
+    const list = previews[id];
+    const chosen = list[Math.floor(Math.random() * list.length)];
+    const iframe = document.getElementById(id);
+    if (iframe) iframe.src = chosen;
+});
+// List of hero videos: YouTube and local assets
+const heroVideos = [
+    // YouTube embeds (use embed URLs)
+    "https://www.youtube.com/embed/4xQCs_ZiP5Q",
+    "https://www.youtube.be/IWpml6bwoxI",
+    "https://www.youtube.com/embed/VIDEO_ID_3",
+    // Local MP4s (relative path)
+    "assets/videos/preview1.mp4",
+    "assets/videos/preview2.mp4"
+];
+
+// Pick a random video
+const chosenHero = heroVideos[Math.floor(Math.random() * heroVideos.length)];
+const heroContainer = document.getElementById("hero-video-container");
+
+if (heroContainer) {
+    if (chosenHero.startsWith("https://www.youtube.com/embed/")) {
+        // YouTube embed
+        heroContainer.innerHTML = `
+      <iframe
+        class="w-full h-full"
+        src="${chosenHero}?autoplay=1&loop=1&mute=1&controls=0&disablekb=1&showinfo=0&modestbranding=1&rel=0"
+        title="Hero Preview"
+        frameborder="0"
+        allow="autoplay; encrypted-media"
+        allowfullscreen
+      ></iframe>
+    `;
+    } else {
+        // Local video
+        heroContainer.innerHTML = `
+      <video
+        class="w-full h-full object-cover"
+        src="${chosenHero}"
+        autoplay
+        muted
+        loop
+        playsinline
+      ></video>
+    `;
+    }
+}
 
 // Hook up buttons & tabs
 window.addEventListener('DOMContentLoaded', () => {
