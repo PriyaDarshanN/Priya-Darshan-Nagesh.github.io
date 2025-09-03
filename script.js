@@ -61,48 +61,9 @@ Object.keys(previews).forEach(id => {
     const iframe = document.getElementById(id);
     if (iframe) iframe.src = chosen;
 });
-// List of hero videos: YouTube and local assets
-const heroVideos = [
-    // YouTube embeds (use embed URLs)
-    "https://www.youtube.com/embed/4xQCs_ZiP5Q",
-    "https://www.youtube.be/IWpml6bwoxI",
-    "https://www.youtube.com/embed/VIDEO_ID_3",
-    // Local MP4s (relative path)
-    "assets/videos/preview1.mp4",
-    "assets/videos/preview2.mp4"
-];
 
-// Pick a random video
-const chosenHero = heroVideos[Math.floor(Math.random() * heroVideos.length)];
-const heroContainer = document.getElementById("hero-video-container");
 
-if (heroContainer) {
-    if (chosenHero.startsWith("https://www.youtube.com/embed/")) {
-        // YouTube embed
-        heroContainer.innerHTML = `
-      <iframe
-        class="w-full h-full"
-        src="${chosenHero}?autoplay=1&loop=1&mute=1&controls=0&disablekb=1&showinfo=0&modestbranding=1&rel=0"
-        title="Hero Preview"
-        frameborder="0"
-        allow="autoplay; encrypted-media"
-        allowfullscreen
-      ></iframe>
-    `;
-    } else {
-        // Local video
-        heroContainer.innerHTML = `
-      <video
-        class="w-full h-full object-cover"
-        src="${chosenHero}"
-        autoplay
-        muted
-        loop
-        playsinline
-      ></video>
-    `;
-    }
-}
+
 
 // Hook up buttons & tabs
 window.addEventListener('DOMContentLoaded', () => {
