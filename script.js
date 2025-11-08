@@ -51,6 +51,10 @@ const previews = {
     "video-5": [
         "https://www.youtube.com/embed/_aosXFYaFH8?si=aAWGyyWmrtLjpbC3",
         "https://www.youtube.com/embed/_aosXFYaFH8?si=aAWGyyWmrtLjpbC3"
+    ],
+    "video-6": [
+        "https://www.youtube.com/embed/laXObi4ZWbw",
+        "https://www.youtube.com/embed/laXObi4ZWbw"
     ]
 };
 
